@@ -1,3 +1,4 @@
 /config.py
 /trainingandtestdata_sentiment140/training.1600000.processed.noemoticon.csv
 /trainingandtestdata_sentiment140/training.csv
+/sklearn_svc_train_25k.pickle
