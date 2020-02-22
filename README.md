@@ -22,11 +22,11 @@ To further focus our analysis on a specific industry, we created a visualization
 Using python and NLP libraries we set out to create a machine learning model to apply towards our tweet data of interest. Since we chose the route of using a supervised learning approach, we obtained an existing dataset found on Kaggle put out by Stanford University containing hundreds of lines of tweets with sentiments already classified. This was used to train and test our model.
 
 ### NLTK Classifiers Tested: 
-Naïve Bayes: Train set: 100k tweets, runtime: 10+ hours, accuracy: 73.26%
-Decision Tree: Train set: 1k, accuracy: 61.8%
-TypedMaxentFeatureEncoding: Train set: 4k, accuracy: 52%
-SKLearn BernoulliNB feature set train set: 25k, accuracy: 74.37%, runtime: 30 mins
-SKLearn SVC feature set, train set: 25k, accuracy: 77.99%, runtime: 10+ hours
+- Naïve Bayes: Train set: 100k tweets, runtime: 10+ hours, accuracy: 73.26%
+- Decision Tree: Train set: 1k, accuracy: 61.8%
+- TypedMaxentFeatureEncoding: Train set: 4k, accuracy: 52%
+- SKLearn BernoulliNB feature set train set: 25k, accuracy: 74.37%, runtime: 30 mins
+- SKLearn SVC feature set, train set: 25k, accuracy: 77.99%, runtime: 10+ hours
 
 ### Backend Process:
 Use Twitter API to pull test data set based on a keyword
