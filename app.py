@@ -11,7 +11,7 @@ import datetime
 ## Bootstrap CSS ##
 external_stylesheets = ['https://codepen.io/amyoshino/pen/jzXypZ.css']
 
-df = pd.read_csv('https://bootcamp-twitter-sentiment-analysis.s3-us-west-1.amazonaws.com/Practice_5.csv')
+df = pd.read_csv('https://bootcamp-twitter-sentiment-analysis.s3-us-west-1.amazonaws.com/tweet_pull_022120.csv')
 restaurant_list = df.Search_Term.unique()
 
 available_indicators = df['Search_Term'].unique()
@@ -72,7 +72,7 @@ app.layout = html.Div(
             html.Div(
             	dcc.Dropdown(
             		id='dropdown-selection', 
-            		value="kfc", 
+            		value="arbys", 
             		clearable=False,
             		options=[
             			{'label': i, 'value': i} for i in available_indicators],
@@ -291,12 +291,12 @@ def update_graph2 (selector):
                     marker={
                            'size': 5,
                            'line': {'width': 0.1, 'color': 'white'},
-                           'color': '#d62728'
+                           'color': '#5dc5e3'
                             },
                     ) 
                         ],
             'layout': {
-                    'color': '#2ca02c, #d62728',
+                    'color': '#2ca02c, #5dc5e3',
                     'plot_bgcolor': colors['background'],
                     'paper_bgcolor': colors['background'],
                     'font': {
